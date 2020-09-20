@@ -2,7 +2,7 @@ def deli_counter(name)
   if name == []
     puts "The line is currently empty."
   else 
-  names.each_with_index|name| {
+  names.each_with_index {|name| 
   puts "The line is currently #{name}"}
   end
 
