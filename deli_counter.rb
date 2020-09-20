@@ -2,7 +2,7 @@
   if name == []
     puts "The line is currently empty."
   else 
-  names.each_with_index|name| do
+  names.each_with_index|name|
   puts "The line is currently #{name}, names.length"
   
   end
@@ -28,4 +28,3 @@ def now_serving
    names.push
  end 
   end 
-end 
