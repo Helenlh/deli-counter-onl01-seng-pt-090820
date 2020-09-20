@@ -3,7 +3,7 @@
     puts "The line is currently empty."
   else 
   names.each_with_index do
-  {puts "The line is currently #{name}, names.length"}
+  puts "The line is currently #{name}, names.length"
   
   end
 
