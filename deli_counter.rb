@@ -1,13 +1,13 @@
 
- def line(name)
   if name == []
     puts "The line is currently empty."
   else 
-  counter = 0 
-  puts "The line is currently #{name}, names.length
+  names.each_with_index do
+  {puts "The line is currently #{name}, names.length"}
   
   end
 
+  
   
 def take_a_number(names, new_name)
   if new_name.length > 0 
@@ -24,7 +24,7 @@ end
 def now_serving
   if names == []
     puts "The line is currently empty."
-   elsif puts "currently serving "#{names}"
+   elsif puts "currently serving #{names}"
    names.push
  end 
   end 
