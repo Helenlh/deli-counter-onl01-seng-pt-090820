@@ -27,6 +27,7 @@ name.collect do|names|
     end 
 end 
 end 
+end 
 
 # def take_a_number(names, new_name)
 #       if names == []
