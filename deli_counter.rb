@@ -7,47 +7,36 @@
 def deli_counter(name)
   if name == []
     puts "The line is currently empty."
-    else 
-      name.each_with_index do |name|
-        puts "The line is currently #{name}"
+    name.collect do |names|
+  "The line is currently #{names}"
 end 
 end 
 end 
+
 
 
 
 
 def line(name)
  if name == []
-    puts "The line is currently empty."
-
-  else 
-    name.each_with_index do |name|
+    puts "The line is currently empty." 
+    else 
+        puts "The line is currently #{name}"
     end 
-    puts "The line is currently #{name}"
-    
 end 
-end
-
 
 
 def take_a_number(names, new_name)
       if names == []
-    puts "The line is currently empty."
+      names << new_name 
+      puts "Welcome, #{names} you are currently #{names.length} in line."
+    while new_name.length > 0
     names << new_name
-   
-  elsif  
-      names << new_name
-      names.each_with_index do |mew_name|  
-      names << new_name
-      puts "Welcome, #{new_name}. You are number #{new_name.length} in line."
-      names.each do |names|
-      puts "The line is currently #{names}."
-        end 
-end 
-end 
-end 
+    puts "Welcome, #{names} you are currently #{names.length} in line."
 
+end 
+end  
+end 
 
 
 
@@ -55,9 +44,14 @@ end
 def now_serving(names)
   if names == []
     puts "There is nobody waiting to be served!"
-  elsif names.each_with_index do |names| 
-    puts "Currently serving #{names}."
-  names.shift
+    while names.length > 1 
+      names.map_with_index do |name, counter|
+      puts "name, counter "
+    handling = names.shift
+    puts "Currently serving #{handling}"
+    end 
+  end 
 end 
 end 
-end 
+
+
