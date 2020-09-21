@@ -21,7 +21,7 @@ def line(name)
  if name == []
     puts "The line is currently empty." 
     else 
-      while name > 0 
+      while name.length > 0 
 name.collect do|names|
       puts "The line is currently #{names}"
     end 
