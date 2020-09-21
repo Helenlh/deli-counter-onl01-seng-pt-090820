@@ -23,7 +23,7 @@ def line(name)
     else 
       while name.length > 0 
 name.collect do|names|
-      puts "The line is currently #{names}"
+      puts "The line is currently #{name}"
     end 
 end 
 end 
