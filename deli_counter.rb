@@ -23,7 +23,7 @@ def line(name)
     else 
       while name.length > 0 
 name.map_with_index do|names|
-      puts "The line is currently #{name}"
+      puts "The line is currently #{names}"
     end 
 end 
 end 
