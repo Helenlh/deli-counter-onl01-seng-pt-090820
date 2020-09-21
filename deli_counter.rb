@@ -26,14 +26,11 @@ def line(name)
 end 
 
 
-def take_a_number(names, new_name)
-      if names == []
-      names << new_name 
-      puts "Welcome, #{names} you are currently #{names.length} in line."
-    while new_name.length > 0
-    names << new_name
-    puts "Welcome, #{names} you are currently #{names.length} in line."
-
+# def take_a_number(names, new_name)
+#       if names == []
+#       names << new_name 
+#       puts "Welcome, #{names} you are currently #{names.length} in line."
+#     while new_name.length > 0
 end 
 end  
 end 
@@ -41,17 +38,17 @@ end
 
 
 
-def now_serving(names)
-  if names == []
-    puts "There is nobody waiting to be served!"
-    while names.length > 1 
-      names.map_with_index do |name, counter|
-      puts "name, counter "
-    handling = names.shift
-    puts "Currently serving #{handling}"
-    end 
-  end 
-end 
-end 
+# def now_serving(names)
+#   if names == []
+#     puts "There is nobody waiting to be served!"
+#     while names.length > 1 
+#       names.map_with_index do |name, counter|
+#       puts "name, counter "
+#     handling = names.shift
+#     puts "Currently serving #{handling}"
+#     end 
+#   end 
+# end 
+# end 
 
 
