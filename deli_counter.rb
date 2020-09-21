@@ -25,7 +25,7 @@ name.collect do|names|
       puts "The line is currently #{names}"
     end 
 end 
-
+end 
 
 # def take_a_number(names, new_name)
 #       if names == []
