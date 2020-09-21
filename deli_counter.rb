@@ -22,7 +22,7 @@ def line(name)
     puts "The line is currently empty." 
     else 
       while name.length > 0 
-name.collect do|names|
+name.map_with_index do|names|
       puts "The line is currently #{name}"
     end 
 end 
